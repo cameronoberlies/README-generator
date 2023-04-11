@@ -1,7 +1,7 @@
 # README Generator
   -[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)] <br>
   #Description <br>
-   -To create a command-line prompt to produced customized README.md files
+   -To create command-line prompts that produce a customized README.md file
   
 ##Table of Contents <br>
   -[Installation](#installation) <br>
