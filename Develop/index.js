@@ -7,12 +7,12 @@ const promptUser = () => {
   return inquirer.prompt([
     {
       type: "input",
-      message: "Project Title",
+      message: "What is the Project Title",
       name: "title",
     },
     {
       type: "input",
-      message: "Description",
+      message: "Project Description",
       name: "description",
     },
 
@@ -44,9 +44,15 @@ const promptUser = () => {
     },
     {
       type: "input",
-      message: "Questions",
-      name: "quest",
+      message: "What is your GitHub Username?",
+      name: "GitHub",
     },
+
+    {
+      type: "input",
+      message: "What is your email address?",
+      name: "email",
+    }
   ]);
 };
 
