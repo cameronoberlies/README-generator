@@ -1,36 +1,36 @@
 # README Generator
-  -[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
-  #Description
-   -To create a command-line prompt that generates a customized README.md file
+  -[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)] <br>
+  #Description <br>
+   -To create a command-line prompt to produced customized README.md files
   
-##Table of Contents
-  -[Installation](#installation)
-  -[Usage](#usage)
-  -[License](#license)
-  -[Contributors](#contributors)
-  -[Tests](#tests)
+##Table of Contents <br>
+  -[Installation](#installation) <br>
+  -[Usage](#usage) <br>
+  -[License](#license) <br>
+  -[Contributors](#contributors)<br>
+  -[Tests](#tests) <br>
   -[Questions](#questions)
 
   
 
-  ###Installation <a id="installation"></a>
-  -run node index.js in the file terminal
+  ###Installation <a id="installation"></a> <br>
+  -run node index.js in the files terminal
 
-  ###Usage <a id="usage"></a>
-  -n/a
+  ###Usage <a id="usage"></a> <br>
+  -
 
-  ###License <a id="license"></a>
-  -MIT
-  -(https://opensource.org/licenses/MIT)
+  ###License <a id="license"></a> <br>
+  -MIT <br>
+  -(https://opensource.org/licenses/MIT) <br>
   -Application licensed by MIT
 
-  ###Contributors <a id="contributors"></a>
+  ###Contributors <a id="contributors"></a> <br>
   -Cameron Oberlies
 
-  ###Tests <a id="tests"></a>
-  -n/a
+  ###Tests <a id="tests"></a> <br>
+  -
 
-  ###Questions <a id="questions"></a>
-  -GitHub Username: cameronoberlies
+  ###Questions <a id="questions"></a> <br>
+  -GitHub Username: cameronoberlies <br>
   -email: cameron.oberlies@outlook.com
 

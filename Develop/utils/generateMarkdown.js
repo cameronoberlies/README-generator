@@ -50,39 +50,39 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  -${renderLicenseBadge(data.license)}
-  #Description
+  -${renderLicenseBadge(data.license)} <br>
+  #Description <br>
    -${data.description}
   
-##Table of Contents
-  -[Installation](#installation)
-  -[Usage](#usage)
-  -[License](#license)
-  -[Contributors](#contributors)
-  -[Tests](#tests)
+##Table of Contents <br>
+  -[Installation](#installation) <br>
+  -[Usage](#usage) <br>
+  -[License](#license) <br>
+  -[Contributors](#contributors)<br>
+  -[Tests](#tests) <br>
   -[Questions](#questions)
 
   
 
-  ###Installation <a id="installation"></a>
+  ###Installation <a id="installation"></a> <br>
   -${data.installation}
 
-  ###Usage <a id="usage"></a>
+  ###Usage <a id="usage"></a> <br>
   -${data.usage}
 
-  ###License <a id="license"></a>
-  -${data.license}
-  -${renderLicenseLink(data.license)}
+  ###License <a id="license"></a> <br>
+  -${data.license} <br>
+  -${renderLicenseLink(data.license)} <br>
   -${renderLicenseSection(data.license)}
 
-  ###Contributors <a id="contributors"></a>
+  ###Contributors <a id="contributors"></a> <br>
   -${data.contributing}
 
-  ###Tests <a id="tests"></a>
+  ###Tests <a id="tests"></a> <br>
   -${data.tests}
 
-  ###Questions <a id="questions"></a>
-  -GitHub Username: ${data.GitHub}
+  ###Questions <a id="questions"></a> <br>
+  -GitHub Username: ${data.GitHub} <br>
   -email: ${data.email}
 
 `;
