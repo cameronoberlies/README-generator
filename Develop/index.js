@@ -1,8 +1,7 @@
 const generateMarkdown = require("./utils/generateMarkdown");
-const jsonPkg = require(".//package.json")
+const jsonPkg = require(".//package.json");
 const { writeFile } = require("fs").promises;
 const inquirer = require("inquirer");
-const choices = ['Installation', 'Usage', 'License', 'Contributors', 'Tests', 'Questions']
 
 const promptUser = () => {
   return inquirer.prompt([
@@ -16,7 +15,7 @@ const promptUser = () => {
       message: "Description",
       name: "description",
     },
-  
+
     {
       type: "input",
       message: "Installation",
@@ -31,7 +30,7 @@ const promptUser = () => {
       type: "list",
       message: "What License badge would you like?",
       name: "license",
-      choice: ['apache', 'boost', 'mozilla', 'MIT'],
+      choices: ["apache", "boost", "IBM", "MIT"],
     },
     {
       type: "input",
@@ -51,48 +50,11 @@ const promptUser = () => {
   ]);
 };
 
-const generateReadme = ({
-  title,
-  description,
-  installation,
-  usage,
-  license,
-  contributing,
-  tests,
-  quest,
-}) =>
-  `#${title}
-
-        ##${description}
-
-        ##Table of Contents
-        
-
-        ###Installation
-        ${installation}
-
-        ###Usage
-        ${usage}
-
-        ###License
-        ${license}
-
-        ###Contributors
-        ${contributing}
-
-        ###Tests
-        ${tests}
-
-        ###Questions
-        ${quest}`;
-
 const init = () => {
   promptUser()
-   
-    .then((answers) => writeFile("README.md", generateReadme(answers)))
+    .then((answers) => writeFile("README.md", generateMarkdown(answers)))
     .then(() => console.log("Successfully wrote to README.md"))
     .catch((err) => console.error(err));
 };
 
 init();
-
