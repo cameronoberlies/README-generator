@@ -1,35 +1,36 @@
-# README gen
+# README Generator
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
   #Description
-  this
+  To create a command-line prompt that creates a customized README.md file
   
 ##Table of Contents
-  -Installation
-  -Usage
-  -License
-  -Contributors
-  -Tests
-  -Questions
+  -[Installation](#installation)
+  -[Usage](#usage)
+  -[License](#license)
+  -[Contributors](#contributors)
+  -[Tests](#tests)
+  -[Questions](#questions)
+
   
+
+  ###Installation <a id="installation"></a>
+  run node index.js in the file terminal
+
+  ###Usage <a id="usage"></a>
   
 
-  ###Installation
-  that
+  ###License <a id="license"></a>
+  MIT
+  (https://opensource.org/licenses/MIT)
+  Application licensed by MIT
 
-  ###Usage
-  yes
+  ###Contributors <a id="contributors"></a>
+  Cameron Oberlies
 
-  ###License
-  boost
-  [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)]
-  (https://www.boost.org/LICENSE_1_0.txt)
-  Application licensed by Boost
-
-  ###Contributors
-  cam
-
-  ###Tests
+  ###Tests <a id="tests"></a>
   n/a
 
-  ###Questions
-  nope
+  ###Questions <a id="questions"></a>
+  cameronoberlies
+  cameron.oberlies@outlook.com
 
