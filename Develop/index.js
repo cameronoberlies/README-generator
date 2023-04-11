@@ -1,20 +1,8 @@
-// TODO: Include packages needed for this application
-
-// TODO: Create an array of questions for user input
-//const questions = [];
-
-// TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-//function init() {}
-
-// Function call to initialize app
-//init();
 const generateMarkdown = require("./utils/generateMarkdown");
 const jsonPkg = require(".//package.json")
 const { writeFile } = require("fs").promises;
 const inquirer = require("inquirer");
+const choices = ['Installation', 'Usage', 'License', 'Contributors', 'Tests', 'Questions']
 
 const promptUser = () => {
   return inquirer.prompt([
@@ -28,11 +16,7 @@ const promptUser = () => {
       message: "Description",
       name: "description",
     },
-    {
-      type: "input",
-      message: "Table of Contents",
-      name: "tableofcontents",
-    },
+  
     {
       type: "input",
       message: "Installation",
@@ -44,9 +28,10 @@ const promptUser = () => {
       name: "usage",
     },
     {
-      type: "input",
-      message: "License",
+      type: "list",
+      message: "What License badge would you like?",
       name: "license",
+      choice: ['apache', 'boost', 'mozilla', 'MIT'],
     },
     {
       type: "input",
@@ -69,7 +54,6 @@ const promptUser = () => {
 const generateReadme = ({
   title,
   description,
-  tableofcontents,
   installation,
   usage,
   license,
@@ -82,24 +66,24 @@ const generateReadme = ({
         ##${description}
 
         ##Table of Contents
-        ${tableofcontents}
+        
 
-        ##Installation
+        ###Installation
         ${installation}
 
-        ##Usage
+        ###Usage
         ${usage}
 
-        ##License
+        ###License
         ${license}
 
-        ##Contributors
+        ###Contributors
         ${contributing}
 
-        ##Tests
+        ###Tests
         ${tests}
 
-        ##Questions
+        ###Questions
         ${quest}`;
 
 const init = () => {
